@@ -1,0 +1,8 @@
+Employee and Manager Salaries
+Find employees who are earning more than their managers. Output the employee name along with the corresponding salary.
+
+select e1.first_name, e1.salary
+from employee e1
+join employee e2
+on e2.id = e1.manager_id
+where e1.salary > e2.salary
