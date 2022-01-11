@@ -1,6 +1,6 @@
 Highest Salary In Department
 Find the employee with the highest salary per department.
-Output the department name, employee's first name along with the corresponding salary.
+Output the department name, employees first name along with the corresponding salary.
 
 
 with tt as (
