@@ -6,7 +6,7 @@ You’re given a table of rental property searches by users. The table consists 
     16 to 40 reviews: Popular
     more than 40 reviews: Hot
 
-Tip: The `id` column in the table refers to the search ID. You'll need to create your own host_id by concating price, room_type, host_since, zipcode, and number_of_reviews.
+Tip: The `id` column in the table refers to the search ID. Youll need to create your own host_id by concating price, room_type, host_since, zipcode, and number_of_reviews.
 
 Output host popularity rating and their minimum, average and maximum rental prices.
 
