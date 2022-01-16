@@ -3,6 +3,21 @@ Find the top 5 states with the most 5 star businesses. Output the state name alo
 
 
 with m5s as (
+select state,count(business_id) as counted,rank() over(order by count(business_id) desc) as ranked
+from yelp_business yb
+where stars = 5
+group by state
+)
+
+select state,counted 
+from m5s
+where ranked <=5
+
+
+
+Second solution
+
+with m5s as (
 select state,count(business_id) as counted
 from yelp_business yb
 where stars = 5
