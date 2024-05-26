@@ -13,7 +13,7 @@ day:
 int
 
 
-Answer - 
+ 
 with user_rank as (
 select from_user as user,count(from_user) as rank from google_gmail_emails
 group by from_user
